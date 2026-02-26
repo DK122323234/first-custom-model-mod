@@ -11,7 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class RegisterBlock {
-    public static final Block TABLET_ALEX_LOH = registerBlock("alex_loh", new Block(FabricBlockSettings.create()));
+public static final Block TABLET_ALEX_LOH = registerBlock("alex_loh", new Block(FabricBlockSettings.create().nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
